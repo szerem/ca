@@ -9,12 +9,13 @@
     }
   },
   "profiles": {
-    "http": {
+    "Catalog.API": {
       "commandName": "Project",
       "dotnetRunMessages": true,
-      "launchBrowser": true,
+       "____launchBrowser": true,
       "launchUrl": "swagger",
-      "applicationUrl": "http://localhost:5010",
+      "applicationUrl": "http://localhost:8000",
+      "dotnetRunMessages": true,
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -36,6 +37,15 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
+    },
+    "Container (Dockerfile)" :{
+      "commandName": "Docker",
+      "launchBrowser": true,
+      "launchUrl": "{schema}://{ServiceHost}:{ServicePort}/swagger",
+      "environmentVariables": {
+        "ASPNETCORE_HTTP_PORTS": "8080"
+      },
+      "publishAllPorts": true
     }
   }
 }

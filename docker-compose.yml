@@ -1,0 +1,9 @@
+
+version: '3.4'
+
+services:
+  catalogapi:
+    image: catalogapi
+    build:
+      context: .
+      dockerfile: Services/Catalog/Catalog.API/Dockerfile
